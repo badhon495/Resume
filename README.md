@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Resume Template</h1>
+  <h1>Resume</h1>
   <p>The LaTeX template of my professional resume.</p>
 </div>
 
