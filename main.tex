@@ -1,0 +1,242 @@
+%-------------------------
+% Resume in Latex
+% Author : Gennadii Chursov
+% Based off of: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{enumitem}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{siunitx}
+\usepackage{hyperref} % Add this line to the preamble of your document
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Md Sakib Sadman Badhon} \\ \vspace{1pt}
+    \small \textit{Computer Science major at BRAC University} \\
+    +8801533024584 $|$
+    \href{mailto:badhon495@gmail.com}{\underline{badhon495@gmail.com}} $|$ 
+    \href{https://badhon495.github.io/}{\underline{badhon495.github.io}} $|$ 
+    \href{https://www.linkedin.com/in/badhon495/}{\underline{linkedin.com/in/badhon495}} $|$
+    \href{https://github.com/badhon495}{\underline{github.com/badhon495}}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bachelor of Science in Computer Science}{CGPA 3.74/4.00}
+{\href{https://www.bracu.ac.bd/}{BRAC University, Dhaka, Bangladesh}} {Jan 2022 - Oct 2025}
+\resumeItemListStart
+\resumeItem{Recognized on the \href{https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors}{Vice Chancellor's List, Dean's List}, and awarded the \href{https://www.bracu.ac.bd/admissions/international-applicants/scholarship-financial-aid}{Merit Scholarship Based on BRAC University Academic Results} across multiple semesters for academic excellence.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/badhon495/ParkIt}{ParkIt}} $|$ \emph{Laravel, PostgreSQL} $|$ \textbf{\href{https://parkit-2arc.onrender.com/}{Live}}}{2025}
+    \resumeItemListStart
+      \resumeItem{Developed a web application for parking space management and booking, featuring user authentication, profile management, and real-time search and booking capabilities.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/badhon495/Easy_Docker_Installation}{Easy Docker Installation}} $|$ \emph{Bash (Shell Script)}}{2024}
+    \resumeItemListStart
+      \resumeItem{Automated Docker installation for major Linux distributions (Ubuntu, Debian, CentOS, Fedora), streamlining system setup and reducing manual configuration.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/badhon495/Nirapod} {Nirapod}} $|$ \emph{Spring Boot, React.js, PostgreSQL} $|$ \textbf{\href{https://nirapod.netlify.app/}{Live}}}{2025}
+    \resumeItemListStart
+    \resumeItem{Built a full-stack emergency response platform with live chat, complaint management, file uploads, real-time location sharing, and role-based access control for users and responders.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/badhon495/should-i-retake}{Should I Retake?}} $|$ \emph{pdf.js, Regex} $|$ \textbf{\href{https://badhon495.github.io/should-i-retake/}{Live}}}{2025}
+    \resumeItemListStart
+      \resumeItem{Created a web-based tool using JavaScript and Regex to analyze academic grade sheets, allowing users to simulate grade changes and calculate required grades to reach target CGPA.}
+    \resumeItemListEnd  
+
+  \resumeProjectHeading
+    {\textbf{\href{https://github.com/debjotyms/streamlit-ml-intrusion-detection-system}{Network Intrusion Detection System}} $|$ \emph{Streamlit, Random Forest, Machine Learning} $|$ \textbf{\href{https://ml-ids.streamlit.app/}{Live}}}{2024}
+    \resumeItemListStart
+      \resumeItem{Developed a machine learning-powered web application for real-time network intrusion detection using Streamlit and Random Forest classifier with user-friendly interface and visual results.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+ \resumeSubheading
+{Open Source Contributor}{May 2025 - }
+{\href{https://opentelemetry.io/}{OpenTelemetry}}{Remote}
+\resumeItemListStart
+\resumeItem{Contributed to OpenTelemetry by localizing documentation into Bangla, collaborating with global maintainers, and gaining hands-on experience in open-source workflows, CI/CD pipelines, and documentation standards.}
+\resumeItemListEnd
+
+ \resumeSubheading
+{Social Media Manager}{Sep 2021 - May 2023}
+{\href{https://www.toyghor.com/} {ToyGhor}}{Dhaka, Bangladesh}
+\resumeItemListStart
+\resumeItem{Managed social media, customer communication, and order processing for a large retail page.}
+% \resumeItemListEnd
+
+
+%     \resumeSubheading
+%       {Tutor}{Jan 2020 - Sep 2021}
+%       {SkillForge Academy}{Dhaka, Bangladesh}
+%       \resumeItemListStart
+%         \resumeItem{It is a local coaching center, aimed to cultivate academic excellence in its students. Unfortunately, financial constraints during COVID led to its closure.}
+%         \resumeItem{Responsibilities: ◦ Taught over 200+ students (English, Biology, Math).}
+%       \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\resumeSubheading
+  {Content Creator}{Jan 2021 - Sep 2021}
+  {Xoshlife, Edison Group}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Wrote tech-based news articles for an online portal.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Skills}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Operating Systems}{: Linux (Ubuntu, Debian, Mint), Windows} \\
+     \textbf{Scripting}{: Bash, Python} \\
+     \textbf{Tools}{: Docker, Git, RClone, FUSE, Splunk} \\
+     \textbf{System Operations}{: Server setup, automation, monitoring, troubleshooting, backup, deployment} \\
+    \textbf{Web Development}{: HTML, CSS, JavaScript, PHP, Laravel, Spring Boot, React, PostgreSQL, MySQL} \\
+    }}
+ \end{itemize}
+
+
+%-----------Certifications-----------
+
+
+\section{Miscellaneous}
+\resumeItemListStart
+\resumeItem{Completed \href{https://coursera.org/share/44fd8f381cb39ac45892569cdf6f7674}{Google Cybersecurity Professional Certificate} from Coursera.}
+\resumeItem{Completed \href{https://coursera.org/share/2afadc6ce043cc25337eb8c8fe61c9b6}{Google IT Automation with Python} from Coursera.}
+\resumeItem{Completed \href{https://store.aicerts.ai/certifications/essentials/ai-prompt-engineer-certification/}{AI Prompt Engineer Certification} from AI Certs.}
+\resumeItem{Participated in \href{https://github.com/freecodecamp-2025-hackathon-complete}{freeCodeCamp 2025 Summer Hackathon.}}
+\resumeItem{Passed \href{https://www.credly.com/badges/d5c30c19-02db-4c5f-9bc9-4bd0f4b6a89e/public_url}{GitHub Foundations} Exam.}
+\resumeItemListEnd
+
+
+
+%-------------------------------------------
+\end{document}
