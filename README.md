@@ -6,18 +6,26 @@
 ## Prerequisites
 
 - LaTeX distribution (TeX Live, MiKTeX, or MacTeX)
-- Required packages: enumitem, latexsym, fullpage, titlesec, marvosym, color, hyperref, fancyhdr, babel, tabularx, siunitx, moderncv
-- Update the file names to your own name in both `.tex` files. It should be `YourName_Resume.tex` and `YourName_CoverLetter.tex`. Here I providing all the commands with my name `SakibSadman_Resume.tex` and `SakibSadman_CoverLetter.tex`.
+- Required packages: enumitem, latexsym, fullpage, titlesec, marvosym, color, hyperref, fancyhdr, babel, tabularx, siunitx, moderncv, graphicx, tikz, fontawesome
+- Update the file names to your own name in both `.tex` files. It should be `YourName_Resume.tex`, `YourName_Resume_Photo.tex`, and `YourName_CoverLetter.tex`. Here I providing all the commands with my name `SakibSadman_Resume.tex`, `SakibSadman_Resume_Photo.tex`, and `SakibSadman_CoverLetter.tex`.
 
 ## How to Compile
 
-### Resume
+### Resume (Standard)
 1. **Using pdflatex (recommended):**
    ```bash
    pdflatex SakibSadman_Resume.tex
    ```
 
 2. Open the generated `SakibSadman_Resume.pdf` file to view your resume.
+
+### Resume with Photo
+1. **Using pdflatex:**
+   ```bash
+   pdflatex SakibSadman_Resume_Photo.tex
+   ```
+
+2. Open the generated `SakibSadman_Resume_Photo.pdf` file to view your resume with photo.
 
 ### Cover Letter
 1. **Using pdflatex:**
@@ -30,8 +38,10 @@
 ## File Structure
 
 ### Resume Files
-- `SakibSadman_Resume.tex` - SakibSadman_Resume resume document
+- `SakibSadman_Resume.tex` - Standard resume document
 - `SakibSadman_Resume.pdf` - Generated PDF output
+- `SakibSadman_Resume_Photo.tex` - Resume document with photo
+- `SakibSadman_Resume_Photo.pdf` - Generated resume PDF with photo
 
 ### Cover Letter Files
 - `SakibSadman_CoverLetter.tex` - Cover letter document
@@ -42,14 +52,16 @@
 
 ## Customization
 
-### Resume
-Edit the `SakibSadman_Resume.tex` file to update:
+### Resume (Standard & Photo Version)
+Edit the `SakibSadman_Resume.tex` or `SakibSadman_Resume_Photo.tex` file to update:
 - Personal information in the header section
 - Education details
 - Work experience
 - Projects
 - Skills
 - Certifications
+
+**Note for Photo Version:** To use the photo resume, place your photo file (e.g., `formal2.jpg`) in the same directory and ensure the filename matches the one referenced in the `.tex` file.
 
 ### Cover Letter
 Edit the `SakibSadman_CoverLetter.tex` file to update:
