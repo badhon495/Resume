@@ -1,9 +1,10 @@
-SakibSadman_Resume.aux
-SakibSadman_Resume.log
-SakibSadman_Resume.out
-SakibSadman_CoverLetter.aux
-SakibSadman_CoverLetter.log
-SakibSadman_CoverLetter.out
-SakibSadman_Resume.fdb_latexmk
-SakibSadman_Resume.fls
-SakibSadman_Resume.synctex.gz
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# PDF files (uncomment if you don't want to track PDFs)
+# *.pdf
