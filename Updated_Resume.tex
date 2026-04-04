@@ -20,8 +20,19 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+\usepackage{iftex}
+\ifPDFTeX
 \usepackage[T1]{fontenc}
-\usepackage[default]{sourcesanspro}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\else
+\usepackage{fontspec}
+\IfFontExistsTF{Calibri}{
+  \setmainfont{Calibri}
+}{
+  \setmainfont{TeX Gyre Heros}
+}
+\fi
 \usepackage{fontawesome5}
 
 \pagestyle{fancy}
@@ -167,8 +178,7 @@ A Computer Science student with a \textbf{strong foundation in software developm
     \href{https://github.com/badhon495/ShikkhaDwar}{\textcolor{blue}{Code}}\normalsize
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Developed a full-stack LMS with YouTube-integrated lessons, multi-type auto-graded quizzes, progress tracking, and automatic certificate generation}
-      \resumeItem{Architected role-based system for Students, Instructors, and Administrators with full authentication flow}
+      \resumeItem{Built a full-stack LMS featuring role-based access control, quiz/assessment engine with auto-grading, progress analytics, and automated certificate generation, with third-party video integration.}
     \resumeItemListEnd
 
     \item
@@ -178,7 +188,7 @@ A Computer Science student with a \textbf{strong foundation in software developm
     \href{https://github.com/badhon495/ml-ids}{\textcolor{blue}{Code}}\normalsize
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Achieved \textbf{95.68\% accuracy} classifying network traffic as normal or anomalous using a Random Forest classifier with real-time confidence scoring}
+      \resumeItem{Built a real-time ML-based network intrusion detection system with 95.68\% accuracy, providing instant traffic classification and dynamic visual alerts.}
     \resumeItemListEnd
 
     \item
@@ -187,8 +197,7 @@ A Computer Science student with a \textbf{strong foundation in software developm
     \href{https://github.com/badhon495/Easy_Docker_Installation}{\textcolor{blue}{Code}}\normalsize
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Built a one-command shell script that auto-detects Linux distributions and installs Docker with the correct workflow}
-      \resumeItem{Reduced setup time by \textbf{99\%} and ensured compatibility across Ubuntu, Debian, CentOS, and Fedora using robust Bash automation}
+      \resumeItem{Developed a shell script to automate Docker installation across multiple Linux distributions by detecting the host OS and executing the appropriate package management workflows, reducing manual setup time and configuration errors by 99\%}
     \resumeItemListEnd
 
     \item
@@ -198,8 +207,18 @@ A Computer Science student with a \textbf{strong foundation in software developm
     \href{https://github.com/badhon495/should-i-retake}{\textcolor{blue}{Code}}\normalsize
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Parses PDF/Excel grade sheets to detect retakeable and failed courses with real-time CGPA recalculation; scaled to \textbf{10,000+ monthly active users}, becoming one of the most-used academic tool on campus}
-      \resumeItem{Engineered async file handling, complex data extraction algorithms, and one-click Excel export}
+      \resumeItem{Built a web app to parse PDF/Excel grade sheets, compute CGPA with retake detection, and render dynamic tables in real time; used by 10K+ monthly users.}
+    \resumeItemListEnd
+
+
+    \item
+    \textbf{Should I Retake} \hfill 2025\\
+    \small\textit{HTML5, CSS3, JavaScript, PDF.js, SheetJS} \hfill
+    \href{https://badhon495.github.io/should-i-retake/}{\textcolor{blue}{Live Demo}} $|$
+    \href{https://github.com/badhon495/should-i-retake}{\textcolor{blue}{Code}}\normalsize
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Developed a full-stack web app for community safety, enabling real-time issue reporting, live chat, location sharing, and response management between citizens and authorities.}
     \resumeItemListEnd
 
     \item
@@ -209,7 +228,7 @@ A Computer Science student with a \textbf{strong foundation in software developm
     \href{https://github.com/badhon495/ParkIt}{\textcolor{blue}{Code}}\normalsize
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Airbnb-style parking marketplace where homeowners list garages and users search, book, and manage reservations with email-based password reset}
+      \resumeItem{Developed a full-stack web application for booking and listing parking spaces, implementing user authentication, profile management, search and reservation workflows, and email-based password reset functionality.}
     \resumeItemListEnd
 
   \end{itemize}
