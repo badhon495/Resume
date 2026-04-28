@@ -98,10 +98,14 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% Define a custom command for sub-headers
+\newcommand{\subheading}[1]{\noindent \textbf{#1} \\}
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
+
 
 %----------HEADING----------
 \begin{center}
@@ -116,9 +120,6 @@
 \end{center}
 
 
-%-----------SUMMARY-----------
-% \section{Summary}
-% A Computer Science student with a \textbf{strong foundation in software development, software testing, and open-source contributions}. Demonstrated expertise in full-stack web development, automation, and cybersecurity through academic projects and professional experience. Proven ability to deliver practical solutions while maintaining excellence in academics.
 
 
 %-----------EXPERIENCE-----------
@@ -129,12 +130,14 @@
       {Trainee Software Engineer}{April 2026 -- Present}
       {\href{https://www.nationalpolymer.net/}{\textcolor{black}{National Polymer Group}}}{Dhaka, Bangladesh}
       \resumeItemListStart
-        \resumeItem{Developed and maintained in-house ERP and business applications supporting manufacturing and nationwide sales operations, improving system reliability and operational efficiency.}
-        \resumeItem{Enhanced sales workflows by building and optimizing order creation and management systems (web/mobile), contributing to increased revenue and smoother business processes.}
-        \resumeItem{Worked with Oracle databases for business-critical data management and helped reduce dependency on third-party software by delivering internal solutions, driving cost savings and greater system control.}
+        \resumeItem{Developing and maintaining in-house ERP systems supporting manufacturing and nationwide sales operations.}
+        \resumeItem{Built and optimized order management workflows, improving operational efficiency and reducing manual processing.}
+        \resumeItem{Debugged and refactored legacy production code, resolving \textbf{10+ critical defects} and improving system reliability.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+
 
 
 %-----------EDUCATION-----------
@@ -144,10 +147,12 @@
       {\href{https://www.bracu.ac.bd/}{\textcolor{black}{BRAC University}}}{Jan. 2022 -- Jan. 2026}
       {Bachelor of Science in Computer Science --- CGPA: \textbf{3.74}/4.00 (High Distinction)}{Dhaka, Bangladesh}
       \resumeItemListStart
-        \resumeItem{Awarded \href{https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors}{\textcolor{black}{Vice Chancellor's List, Dean's List}}, and \href{https://www.bracu.ac.bd/admissions/international-applicants/scholarship-financial-aid}{\textcolor{black}{Merit Scholarship}} across multiple semesters}
+        \resumeItem{Awarded \href{https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors}{\textcolor{black}{Vice Chancellor's List, Dean's List}}, and \href{https://www.bracu.ac.bd/admissions/international-applicants/scholarship-financial-aid}{\textcolor{black}{Merit Scholarship}} across multiple semesters.}
         \resumeItem{Relevant Coursework: DBMS, System Design, Machine Learning, Cloud Computing, Netwroking, Web Development}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+
 
 
 %-----------PROJECTS-----------
@@ -155,79 +160,78 @@
   \begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt]
 
     \item
-    \textbf{Should I Retake} \hfill 2025\\
-    \small\textit{HTML5, CSS3, JavaScript, PDF.js, SheetJS} \hfill
-    \href{https://badhon495.github.io/should-i-retake/}{\textcolor{blue}{Live}} $|$
-    \href{https://github.com/badhon495/should-i-retake}{\textcolor{blue}{Code}}\normalsize
+    \textbf{Should I Retake (Academic Analytics Platform)} \hfill 2025\\
+    \small\textit{JavaScript, PDF.js, SheetJS} \hfill
+    \href{https://badhon495.github.io/should-i-retake/}{Live} $|$
+    \href{https://github.com/badhon495/should-i-retake}{Code}
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{A web application to parse PDF and Excel grade sheets, compute CGPA with retake detection, and render dynamic tables in real time; it is used by \textbf{10,000+} monthly users and has become one of the most widely used tools on campus.
-}
+      \resumeItem{Built a client-side application to parse PDF/Excel grade sheets and compute CGPA with retake detection in real time.}
+      \resumeItem{Engineered parallel PDF parsing using Promise-based processing and optimized text extraction with Map-based grouping, improving processing efficiency.}
+      \resumeItem{Implemented debounced updates, DOM caching, and efficient data structures to ensure smooth performance on low-end devices}
+      \resumeItem{Scaled to \textbf{10,000+ monthly users} by eliminating backend dependency and enabling instant in-browser results.}
     \resumeItemListEnd
 
     \item
-    \textbf{ParkIt} \hfill 2025\\
-    \small\textit{Laravel, PHP, SQLite, Vite} \hfill
-    \href{https://parkit-2arc.onrender.com/}{\textcolor{blue}{Live}} $|$
-    \href{https://github.com/badhon495/ParkIt}{\textcolor{blue}{Code}}\normalsize
-    \vspace{-5pt}
-    \resumeItemListStart
-      \resumeItem{A full-stack web application for booking and listing parking spaces, implementing user authentication, profile management, search and reservation workflows, and email-based password reset functionality.}
-    \resumeItemListEnd
-
-    \item
-    \textbf{Easy Docker Installation} \hfill 2024\\
-    \small\textit{Bash, Linux Automation, Docker} \hfill
-    \href{https://github.com/badhon495/Easy_Docker_Installation}{\textcolor{blue}{Code}}\normalsize
-    \vspace{-5pt}
-    \resumeItemListStart
-      \resumeItem{A shell script to automate Docker installation across multiple Linux distributions by detecting the host OS and executing the appropriate package management workflows, reducing manual setup time and configuration errors by \textbf{99\%}.}
-    \resumeItemListEnd
-
-
-        \item
-    \textbf{Nirapod} \hfill 2025\\
+    \textbf{Nirapod (Real-Time Civic Reporting Platform)} \hfill 2025\\
     \small\textit{Spring Boot, React, PostgreSQL, WebSocket} \hfill
-    \href{https://nirapod.netlify.app/}{\textcolor{blue}{Live}} $|$
-    \href{https://github.com/badhon495/Nirapod}{\textcolor{blue}{Code}}\normalsize
+    \href{https://nirapod.netlify.app/}{Live} $|$
+    \href{https://github.com/badhon495/Nirapod}{Code}
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{A full-stack social platform that enables users to report local issues with images and live location, while authorities respond in real time through a social feed and live chat, contributing to improve community safety and communication.}
+      \resumeItem{Architected a three-tier system (React, Spring Boot, Node.js WebSocket) for real-time issue reporting and communication.}
+      \resumeItem{Implemented real-time communication using WebSockets, enabling live chat and instant status updates.}
+      \resumeItem{Built secure authentication using JWT, OAuth2, and OTP verification with encrypted user data (BCrypt).}
+      \resumeItem{Integrated location tracking and media uploads to support issue reporting with geospatial context.}
     \resumeItemListEnd
 
     \item
-    \textbf{ShikkhaDwar} \hfill 2025\\
+    \textbf{ShikkhaDwar (Learning Management System)} \hfill 2025\\
     \small\textit{Flask, SQLAlchemy, PostgreSQL} \hfill
-    \href{https://shikkhadwar-81r2.onrender.com/}{\textcolor{blue}{Live}} $|$
-    \href{https://github.com/nihal-kabir/ShikkhaDwar}{\textcolor{blue}{Code}}\normalsize
+    \href{https://shikkhadwar-81r2.onrender.com/}{Live} $|$
+    \href{https://github.com/nihal-kabir/ShikkhaDwar}{Code}
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{A full-stack Learning Management System featuring role-based access control, quiz/assessment engine with auto-grading, progress analytics, and automated certificate generation, with third-party video integration.}
+      \resumeItem{Developed a role-based LMS supporting course management, student enrollment, and instructor workflows.}
+      \resumeItem{Built quiz engine with auto-grading and implemented progress tracking for performance monitoring.}
+      \resumeItem{Designed backend APIs and database models for scalable content and user management.}
     \resumeItemListEnd
-
-
-
-%     \item
-%     \textbf{Network Intrusion Detection System} \hfill 2024\\
-%     \small\textit{Python, Streamlit, Scikit-learn, Random Forest} \hfill
-%     \href{https://ml-ids.streamlit.app/}{\textcolor{blue}{Live}} $|$
-%     \href{https://github.com/debjotyms/streamlit-ml-intrusion-detection-system}{\textcolor{blue}{Code}}\normalsize
-%     \vspace{-5pt}
-%     \resumeItemListStart
-%       \resumeItem{A machine learning-based real-time intrusion detection system with \textbf{95.68\%} accuracy, enabling instant network traffic classification and visual threat alerts.}
-% \resumeItemListEnd
-
+    \item
+    \textbf{Easy Docker Installation (Automated Script)} \hfill 2024\\
+    \small\textit{Bash, Linux} \hfill
+    \href{https://github.com/badhon495/Easy_Docker_Installation}{Code}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Built a cross-distribution script to automate Docker installation by detecting OS and executing appropriate package workflows.}
+      \resumeItem{Reduced manual setup time and configuration errors by \textbf{~99\%} across multiple Linux environments.}
+    \resumeItemListEnd
+    
   \end{itemize}
 
 
-%-----------MISCELLANEOUS-----------
+
+
+%-----------OPEN SOURCE & PROBLEM SOLVING-----------
 \section{Open Source \& Problem Solving}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{\item{
-\textbf{Open Source:} Official maintainer for \textbf{\href{https://github.com/tldr-pages/tldr}{tldr-pages}} and \textbf{\href{https://github.com/open-telemetry}{OpenTelemetry}} (\textbf{62,000+} GitHub stars combined), with \textbf{50+} merged Pull Requests localizing technical documentation into Bangla. Applied CI/CD practices using GitHub Actions and collaborated through code reviews and Pull Requests.\\
-\textbf{Problem Solving:} Solved \textbf{150+} problems on LeetCode \& HackerRank, strengthening skills in SQL, data structures, dynamic programming, and graph algorithms.
-}}
+
+\subheading{Open Source}
+\href{https://github.com/tldr-pages/tldr}{tldr-pages}, \href{https://github.com/open-telemetry}{OpenTelemetry} --
+Maintainer
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Contributed \textbf{50+ merged pull requests} across repositories with \textbf{62,000+ combined GitHub stars.}
+    \item Improved accessibility of developer documentation for Bangla-speaking users.
+    \item Collaborated with global maintainers through code reviews, issue tracking, and PR workflows.
+    \item Used Git and CI/CD pipelines (GitHub Actions) in distributed environments.
 \end{itemize}
+
+\vspace{0.5em}
+
+\subheading{Problem Solving}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Solved \textbf{150+} problems on LeetCode \& HackerRank, strengthening skills in SQL, data structures, dynamic programming, and graph algorithms.
+\end{itemize}
+
+
 
 
 %-----------TECHNICAL SKILLS-----------
@@ -235,25 +239,16 @@
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
 \textbf{Languages:} Python, Java, JavaScript, Bash\;|\;
-\textbf{Databases:} Oracle, PostgreSQL, MySQL \;|\;\\
-\textbf{Frameworks:} React, Spring Boot, Laravel, Flask \;|\;\\
-
+\textbf{Databases:} Oracle, PostgreSQL, MySQL\\
+\textbf{Frameworks:} React, Spring Boot, Laravel, Flask\\
 \textbf{Tools:} Git, GitHub Actions, Docker, Postman, Jira, Swagger \;|\;
-\textbf{Testing:} Selenium, k6 \;|\;\\
+\textbf{Testing:} Selenium, k6\\
 \textbf{Systems:} Linux (CLI, Bash scripting)
 }}
 \end{itemize}
 
 
-% %-----------CERTIFICATIONS-----------
-% \section{Certifications}
-%  \begin{itemize}[leftmargin=0.15in, label={}]
-%     \small{\item{
-%     \textbf{Google:} \href{https://coursera.org/share/44fd8f381cb39ac45892569cdf6f7674}{\textcolor{black}{Cybersecurity Professional Certificate}}, \href{https://coursera.org/share/2afadc6ce043cc25337eb8c8fe61c9b6}{\textcolor{black}{IT Automation with Python}}, \href{https://coursera.org/share/24a0cddc79cd62b195fd9be6436e6dae}{\textcolor{black}{Data Analytics}}, \href{https://www.kaggle.com/certification/badges/badhon495/105}{\textcolor{black}{5-Day AI Agents Intensive}} \\
-%         \textbf{Open Source:} \href{https://www.holopin.io/hacktoberfest2025/userbadge/cmh9yxboc00isjl04v2tfpmt5}{\textcolor{black}{Hacktoberfest Super Contributor 2025}}, \href{https://www.holopin.io/hacktoberfest2023/hall/@badhon495}{\textcolor{black}{Hacktoberfest 2023}}\\
-%     \textbf{Other:} \href{https://www.credly.com/badges/d5c30c19-02db-4c5f-9bc9-4bd0f4b6a89e/public_url}{\textcolor{black}{GitHub Foundations Exam}}, \href{https://verify.certs365.io/?=3c7eb735f2aa}{\textcolor{black}{AI Prompt Engineer Level 1}}, \href{https://badges.parchment.com/public/assertions/ZF0yx-i3T1CvXYwDLEUneA?identity__email=sakib.sadman.badhon\%40g.bracu.ac.bd}{\textcolor{black}{Postman API Fundamentals Student Expert}}, \href{https://badhon495.github.io/data/QuantumCertificate.pdf}{\textcolor{black}{Introduction to Quantum Computing}}, FreeCodeCamp 2025 Summer Hackathon
-%     }}
-%  \end{itemize}
+
 
 %-----------CERTIFICATIONS-----------
 \section{Certifications}
