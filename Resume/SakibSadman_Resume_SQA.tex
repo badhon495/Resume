@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\else
+\usepackage{fontspec}
+\IfFontExistsTF{Calibri}{
+  \setmainfont{Calibri}
+}{
+  \setmainfont{TeX Gyre Heros}
+}
+\fi
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{3.60004pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Define a custom command for sub-headers
+\newcommand{\subheading}[1]{\noindent \textbf{#1} \\}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Md Sakib Sadman Badhon} \\ \vspace{4pt}
+    \small Software Engineer $|$ Manual QA \& Testing Focus $|$ Python, SQL, Web Applications \\ \vspace{4pt}
+    \small
+    \faMapMarker*~Mohammadpur, Dhaka \enspace
+    \faIcon{mobile-alt}~+8801533024584 \enspace
+    \faEnvelope~\href{mailto:badhon495@gmail.com}{badhon495@gmail.com} \enspace
+    \faLinkedin~\href{https://linkedin.com/in/badhon495/}{linkedin.com/in/badhon495} \\ \vspace{4pt}
+    \faGlobe~\href{https://badhon495.github.io/}{badhon495.github.io} \enspace
+    \faGithub~\href{https://github.com/badhon495}{github.com/badhon495} \enspace
+\end{center}
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Trainee Software Engineer}{April 2026 -- Present}
+      {\href{https://www.nationalpolymer.net/}{\textcolor{black}{National Polymer Group}}}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Conducted exploratory testing on the in-house ERP system prior to release, identifying, documenting, and reporting \textbf{5+ defects} to the development team.}
+        \resumeItem{Designed and implemented \textbf{7+ features} for the core sales application; independently tested each feature against edge cases in order workflows and payment collection before release, catching and documenting \textbf{20+ defects} during the development cycle.}
+        \resumeItem{Audited the company's primary website and backend systems for functional and security gaps, identifying and reporting \textbf{10+ defects}, including a critical authentication vulnerability.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.bracu.ac.bd/}{\textcolor{black}{BRAC University}}}{Jan. 2022 -- Jan. 2026}
+      {Bachelor of Science in Computer Science --- CGPA: \textbf{3.74}/4.00 (High Distinction)}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Awarded \href{https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors}{\textcolor{black}{Vice Chancellor's List, Dean's List}}, and \href{https://www.bracu.ac.bd/admissions/international-applicants/scholarship-financial-aid}{\textcolor{black}{Merit Scholarship}} across multiple semesters.}
+        \resumeItem{Relevant Coursework: DBMS, System Design, Machine Learning, Cloud Computing, Networking, Web Development}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt]
+
+    \item
+    \textbf{Should I Retake (Academic Analytics Platform)} \hfill 2025\\
+    \small\textit{JavaScript, PDF.js, SheetJS} \hfill
+    \href{https://badhon495.github.io/should-i-retake/}{Live} $|$
+    \href{https://github.com/badhon495/should-i-retake}{Code}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Built a client-side application to parse PDF/Excel grade sheets and compute CGPA with retake detection in real time.}
+      \resumeItem{Manually tested parsing logic against varied grade sheet formats and edge cases, and validated performance across a range of screen sizes and processor/device types to ensure smooth, accurate results entirely client-side.}
+      \resumeItem{Scaled to \textbf{10,000+ monthly users} by eliminating backend dependency and enabling instant in-browser results.}
+    \resumeItemListEnd
+
+    \item
+    \textbf{ShikkhaDwar (Learning Management System)} \hfill 2025\\
+    \small\textit{Flask, SQLAlchemy, PostgreSQL} \hfill
+    \href{https://shikkhadwar-81r2.onrender.com/}{Live} $|$
+    \href{https://github.com/nihal-kabir/ShikkhaDwar}{Code}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Developed a role-based LMS supporting course management, student enrollment, and instructor workflows.}
+      \resumeItem{Manually tested the auto-grading quiz engine against varied answer combinations to confirm scoring accuracy.}
+      \resumeItem{Conducted functional and non-functional testing across LMS modules, and performed regression testing after each new feature to verify existing functionality remained intact.}
+      \resumeItem{Designed backend APIs and database models for scalable content and user management.}
+    \resumeItemListEnd
+    \item
+    \textbf{Easy Docker Installation (Automated Script)} \hfill 2024\\
+    \small\textit{Bash, Linux} \hfill
+    \href{https://github.com/badhon495/Easy_Docker_Installation}{Code}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Built a cross-distribution script to automate Docker installation by detecting OS and executing appropriate package workflows.}
+      \resumeItem{Validated script reliability across multiple VM instances and installation scenarios (fresh installs, partial installs, three+ Linux distributions), eliminating manual troubleshooting steps required in prior manual setups.}
+    \resumeItemListEnd
+    
+  \end{itemize}
+
+
+
+
+%-----------OPEN SOURCE & PROBLEM SOLVING-----------
+\section{Open Source \& Problem Solving}
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt]
+
+    \item
+    \textbf{Open Source} \\
+    \small\textit{\href{https://github.com/tldr-pages/tldr}{tldr-pages}, \href{https://github.com/open-telemetry}{OpenTelemetry} -- Maintainer}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Contributed \textbf{50+ merged pull requests} across tldr-pages and OpenTelemetry; all contributions were validated against the projects' existing automated test and lint pipelines (markdownlint, tldr-lint, pytest, shellcheck) as part of standard PR review.}
+      \resumeItem{Improved accessibility of developer documentation for Bangla-speaking users.}
+    \resumeItemListEnd
+
+    \item
+    \textbf{Problem Solving}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Solved \textbf{150+} problems on LeetCode \& HackerRank, strengthening skills in SQL, data structures, dynamic programming, and graph algorithms.}
+    \resumeItemListEnd
+
+  \end{itemize}
+
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Testing:} Manual testing, test case design, defect reporting, regression testing \;|\; \textbf{Exposure to:} Selenium, k6, Postman\\
+\textbf{Languages:} Python, Java, JavaScript, Bash\;|\;
+\textbf{Databases:} Oracle, PostgreSQL, MySQL\\
+\textbf{Frameworks:} React, Spring Boot, Laravel, Flask\\
+\textbf{Tools:} Git, GitHub Actions, Docker, Postman, Jira, Swagger\\
+\textbf{Systems:} Linux (CLI, Bash scripting)
+}}
+\end{itemize}
+
+
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \href{https://coursera.org/share/44fd8f381cb39ac45892569cdf6f7674}{\textcolor{black}{\textbf{Google Cybersecurity Professional Certificate}}} (2023) — Covers threat detection, Linux security, SQL, and incident response. \\
+    \href{https://www.credly.com/badges/d5c30c19-02db-4c5f-9bc9-4bd0f4b6a89e/public_url}{\textcolor{black}{\textbf{GitHub Foundations Certification}}} (2024) — Validates Git workflows, collaboration, and repository management. \\
+    \href{https://badges.parchment.com/public/assertions/ZF0yx-i3T1CvXYwDLEUneA?identity__email=sakib.sadman.badhon\%40g.bracu.ac.bd}{\textcolor{black}{\textbf{Postman API Fundamentals Student Expert}}} (2025) — Demonstrates API design, testing, and automation skills. \\
+    \href{https://coursera.org/share/2afadc6ce043cc25337eb8c8fe61c9b6}{\textcolor{black}{\textbf{Google IT Automation with Python}}} (2024) — Focuses on Python scripting, automation, and troubleshooting for IT tasks. \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
