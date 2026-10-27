@@ -6,6 +6,8 @@
 %------------------------
 
 \documentclass[a4paper]{article}
+\usepackage{fontsize}
+\changefontsize{10.5pt}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -23,15 +25,10 @@
 \usepackage{iftex}
 \ifPDFTeX
 \usepackage[T1]{fontenc}
-\usepackage[scaled]{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage[sfdefault]{biolinum}
 \else
 \usepackage{fontspec}
-\IfFontExistsTF{Calibri}{
-  \setmainfont{Calibri}
-}{
-  \setmainfont{TeX Gyre Heros}
-}
+\usepackage[sfdefault]{biolinum}
 \fi
 \usepackage{fontawesome5}
 
@@ -42,11 +39,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 \raggedbottom
@@ -56,6 +53,8 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{11pt}{8pt}
 
 \pdfgentounicode=1
 
@@ -214,7 +213,8 @@
 
 %-----------OPEN SOURCE & PROBLEM SOLVING-----------
 \section{Open Source \& Problem Solving}
-
+\begin{itemize}[leftmargin=0.15in, label={}, parsep=0pt]
+\item
 \small
 \subheading{Open Source}
 \href{https://github.com/tldr-pages/tldr}{tldr-pages}, \href{https://github.com/open-telemetry}{OpenTelemetry} --
@@ -228,8 +228,9 @@ Maintainer
 \vspace{0.5em}
 
 \subheading{Problem Solving}
-\begin{itemize}[noitemsep, topsep=0pt]
+\begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt]
 \item Solved \textbf{150+} problems on LeetCode \& HackerRank, covering SQL, DSA, DP, and graph algorithms.
+\end{itemize}
 \end{itemize}
 
 
