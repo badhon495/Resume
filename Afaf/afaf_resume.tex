@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper]{article}
+\usepackage{fontsize}
+\changefontsize{10.5pt}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{biolinum}
+\else
+\usepackage{fontspec}
+\usepackage[sfdefault]{biolinum}
+\fi
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{3.60004pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{11pt}{8pt}
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Define a custom command for sub-headers
+\newcommand{\subheading}[1]{\noindent \textbf{#1} \\}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Afaf Binta Shamsuddin} \ \vspace{4pt}
+    \small
+    \faMapMarker*~Mirpur, Dhaka, Bangladesh \enspace
+    \faIcon{mobile-alt}~01952209233 \enspace
+    \faEnvelope~\href{mailto:afaf.binta.shamsuddin@gmail.com}{afaf.binta.shamsuddin@gmail.com} \enspace
+    \faLinkedin~\href{https://linkedin.com/in/afafbintashamsuddin}{afafbintashamsuddin}
+\end{center}
+
+
+
+
+%-----------PROFILE-----------
+\section{Profile}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+Motivated Computer Science student with a strong foundation in programming, problem-solving, and software development. Eager to apply technical skills, learn new tools, and contribute to real-world projects in a collaborative environment.
+}}
+\end{itemize}
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.bracu.ac.bd/}{\textcolor{black}{BRAC University}}}{2022 -- Present}
+      {Bachelor of Science in Computer Science (CS)}{Dhaka, Bangladesh}
+
+    \resumeSubheading
+      {Shaheed Bir Uttam Lt. Anwar Girls' College}{2018 -- 2020}
+      {Higher School Certificate (HSC), Science --- GPA: \textbf{5.00}}{Dhaka, Bangladesh}
+
+    \resumeSubheading
+      {Shaheed Bir Uttam Lt. Anwar Girls' College}{2016 -- 2018}
+      {Secondary School Certificate (SSC), Science --- GPA: \textbf{5.00}}{Dhaka, Bangladesh}
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Executive}{2023 -- 2025}
+      {BRAC University Art \& Photography Society}{Dhaka, Bangladesh}
+
+    \resumeSubheading
+      {General Member}{2023 -- 2024}
+      {BRAC University Computer Club}{Dhaka, Bangladesh}
+
+    \resumeSubheading
+      {Apprentice}{2024}
+      {Robotics Club of BRAC University}{Dhaka, Bangladesh}
+
+    \resumeSubheading
+      {General Secretary}{2016 -- 2017}
+      {SAGC Science Club}{Dhaka, Bangladesh}
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Programming \& Data:} Python, SQL \;|\;
+\textbf{Design:} Figma\
+\textbf{Office:} Microsoft Word, Excel, PowerPoint
+}}
+\end{itemize}
+
+
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{English:} IELTS 6.5 \
+\textbf{Bangla:} Native \
+\textbf{German:} Duolingo score 10; completed a 4-month German course as an extracurricular activity in the residential semester \
+\textbf{French:} Completed ``Basic French: FRN101'' as an elective course at BRAC University
+}}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
