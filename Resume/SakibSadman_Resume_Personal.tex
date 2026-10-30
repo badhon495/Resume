@@ -5,7 +5,9 @@
 % License : MIT
 %------------------------
 
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper]{article}
+\usepackage{fontsize}
+\changefontsize{12pt}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -23,15 +25,10 @@
 \usepackage{iftex}
 \ifPDFTeX
 \usepackage[T1]{fontenc}
-\usepackage[scaled]{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage[sfdefault]{biolinum}
 \else
 \usepackage{fontspec}
-\IfFontExistsTF{Calibri}{
-  \setmainfont{Calibri}
-}{
-  \setmainfont{TeX Gyre Heros}
-}
+\usepackage[sfdefault]{biolinum}
 \fi
 \usepackage{fontawesome5}
 
@@ -42,11 +39,11 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 \raggedbottom
@@ -56,6 +53,8 @@
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\titlespacing*{\section}{0pt}{11pt}{8pt}
 
 \pdfgentounicode=1
 
@@ -110,13 +109,12 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Md Sakib Sadman Badhon} \\ \vspace{4pt}
-    \small
-    % \faMapMarker*~Mohammadpur, Dhaka \enspace
+    \faMapMarker*~Mohammadpur, Dhaka \enspace
     \faIcon{mobile-alt}~+8801533024584 \enspace
     \faEnvelope~\href{mailto:badhon495@gmail.com}{badhon495@gmail.com} \enspace
+    \faLinkedin~\href{https://linkedin.com/in/badhon495/}{linkedin.com/in/badhon495} \\ \vspace{4pt}
     \faGlobe~\href{https://badhon495.github.io/}{badhon495.github.io} \enspace
-    \faLinkedin~\href{https://linkedin.com/in/badhon495/}{badhon495} \enspace
-    \faGithub~\href{https://github.com/badhon495}{badhon495}
+    \faGithub~\href{https://github.com/badhon495}{github.com/badhon495} \enspace
 \end{center}
 
 
@@ -131,8 +129,8 @@
       {\href{https://www.nationalpolymer.net/}{\textcolor{black}{National Polymer Group}}}{Dhaka, Bangladesh}
       \resumeItemListStart
         \resumeItem{Conducted exploratory testing on the in-house ERP system prior to release, identifying, documenting, and reporting \textbf{5+ defects} to the development team.}
-        \resumeItem{Designed and implemented \textbf{7+ features} for the core sales application; independently tested each feature against edge cases in order workflows and payment collection before release, catching and documenting \textbf{20+ defects} during the development cycle.}
-        \resumeItem{Audited the company's primary website and backend systems for functional and security gaps, identifying and reporting \textbf{10+ defects}, including a critical authentication vulnerability.}
+       \resumeItem{Designed and implemented \textbf{8+ features} across sales and office applications and performed integration, regression, and ad-hoc testing, identifying \textbf{20+ defects}.}
+  \resumeItem{Conducted functional and non-functional testing of the company's primary website and backend systems, identifying and reporting \textbf{10+ defects}, including a critical authentication vulnerability.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -144,20 +142,27 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {\href{https://www.bracu.ac.bd/}{\textcolor{black}{BRAC University}}}{Jan. 2022 -- Jan. 2026}
-      {Bachelor of Science in Computer Science --- CGPA: \textbf{3.74}/4.00 (High Distinction)}{Dhaka, Bangladesh}
+      {\textbf{Bachelor of Science in Computer Science}}{Jan. 2022 -- Jan. 2026}
+      {\href{https://www.bracu.ac.bd/}{\textcolor{black}{BRAC University}}}{Dhaka, Bangladesh}
       \resumeItemListStart
+        \resumeItem{CGPA: \textbf{3.74}/4.00 (High Distinction)}
         \resumeItem{Awarded \href{https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors}{\textcolor{black}{Vice Chancellor's List, Dean's List}}, and \href{https://www.bracu.ac.bd/admissions/international-applicants/scholarship-financial-aid}{\textcolor{black}{Merit Scholarship}} across \textbf{6 of 12 semesters}.}
         \resumeItem{Relevant Coursework: DBMS, System Design, Machine Learning, Cloud Computing, Networking, Web Development}
       \resumeItemListEnd
 
     \resumeSubheading
-      {\href{https://mgcdhaka.edu.bd/}{\textcolor{black}{Mohammadpur Government College}}}{2019}
-      {Higher Secondary Certificate (HSC) --- GPA: \textbf{4.58}/5.00}{Dhaka, Bangladesh}
+      {\textbf{Higher Secondary Certificate (HSC)}}{2019}
+      {\href{https://mgcdhaka.edu.bd/}{\textcolor{black}{Mohammadpur Government College}}}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{GPA: \textbf{4.58}/5.00}
+      \resumeItemListEnd
 
     \resumeSubheading
-      {\href{https://www.mghs.edu.bd/}{\textcolor{black}{Mohammadpur Government High School}}}{2017}
-      {Secondary School Certificate (SSC) --- GPA: \textbf{5.00}/5.00}{Dhaka, Bangladesh}
+      {\textbf{Secondary School Certificate (SSC)}}{2017}
+      {\href{https://www.mghs.edu.bd/}{\textcolor{black}{Mohammadpur Government High School}}}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{GPA: \textbf{5.00}/5.00}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
@@ -165,44 +170,40 @@
 
 %-----------PROJECTS-----------
 \section{Projects}
-  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt]
+  \begin{itemize}[leftmargin=0.15in, label={}, itemsep=3pt]
 
     \item
     \textbf{Should I Retake (Academic Analytics Platform)} \hfill 2025\\
-    \small\textit{JavaScript (ES6+), PDF.js, SheetJS, jsPDF, HTML5, CSS3} \hfill
+    \small\textit{JavaScript, PDF.js, SheetJS} \hfill
     \href{https://badhon495.github.io/should-i-retake/}{Live} $|$
     \href{https://github.com/badhon495/should-i-retake}{Code}
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Built a client-side application to parse PDF/Excel grade sheets and compute CGPA with retake detection in real time.}
-      \resumeItem{Manually tested parsing logic against varied grade sheet formats and edge cases, and validated performance across a range of screen sizes and processor/device types to ensure smooth, accurate results entirely client-side.}
-      \resumeItem{Scaled to \textbf{10,000+ monthly users} by eliminating backend dependency and enabling instant in-browser results.}
+      \resumeItem{Built a zero-backend, privacy-first CGPA planner that parses official grade sheets in-browser, so no student data leaves the device; deployed on GitHub Pages, serving \textbf{10,000+ monthly users} at zero infrastructure cost.}
+\resumeItem{Performed manual testing of parsing logic across diverse grade sheet formats, malformed inputs, and edge cases.}
+\resumeItem{Conducted cross-browser and cross-device compatibility testing across screen sizes and hardware configurations, validating UI responsiveness and client-side calculation accuracy.}
     \resumeItemListEnd
 
     \item
-    \textbf{ShikkhaDwar (Learning Management System)} \textit{\small (Team of 3)} \hfill 2025\\
-    \small\textit{Flask, SQLAlchemy, PostgreSQL, ReportLab, Gunicorn, Render} \hfill
+    \textbf{ShikkhaDwar (Learning Management System)} \hfill 2025\\
+    \small\textit{Flask, SQLAlchemy, PostgreSQL} \hfill
     \href{https://shikkhadwar-81r2.onrender.com/}{Live} $|$
     \href{https://github.com/nihal-kabir/ShikkhaDwar}{Code}
     \vspace{-5pt}
-    \resumeItemListStart
-      \resumeItem{Developed a role-based LMS supporting course management, student enrollment, and instructor workflows.}
-      \resumeItem{Manually tested the auto-grading quiz engine against varied answer combinations to confirm scoring accuracy.}
-      \resumeItem{Conducted functional and non-functional testing across LMS modules, and performed regression testing after each new feature to verify existing functionality remained intact.}
-      \resumeItem{Designed backend APIs and database models for scalable content and user management.}
-    \resumeItemListEnd
-
+\resumeItemListStart
+    \resumeItem{Developed a role-based LMS with backend APIs for course management, student enrollment, and instructor workflows.}
+    \resumeItem{Manually tested the auto-grading quiz engine against diverse answer combinations to verify scoring accuracy.}
+    \resumeItem{Performed functional, non-functional, and regression testing across LMS modules to identify defects and ensure existing functionality remained intact after new releases.}
+\resumeItemListEnd
     \item
     \textbf{Dhikr (Tasbih Counter App)} \hfill 2026\\
-    \small\textit{Kotlin, Jetpack Compose, Material 3, Room, DataStore, Coroutines/Flow, R8} \hfill
-    \href{https://github.com/badhon495/Dhikr/releases}{Download} $|$
+    \small\textit{Kotlin, Jetpack Compose, Room, JUnit, Espresso, Macrobenchmark} \hfill
+    \href{https://github.com/badhon495/Dhikr/releases/latest}{Download} $|$
     \href{https://github.com/badhon495/Dhikr}{Code}
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Developed an offline-first native Android app (Kotlin, Jetpack Compose, Room) with a tap-to-count engine, multi-step routines, bilingual English/Bangla UI, home-screen widgets, and JSON backup/restore.}
-      \resumeItem{Wrote \textbf{100+ automated test cases} (JUnit) covering counter logic, undo and session restore, Gemini response parsing and error mapping, routine share/import, localization, and database seed data, plus an instrumented test for encrypted API-key storage.}
-      \resumeItem{Performed functional, regression, and accessibility testing (screen-reader labels, high-contrast borders) across English/Bangla locales and light/dark themes; traced and fixed counter-state and stale-content defects reported during release cycles.}
-      \resumeItem{Ran Macrobenchmarks for startup, counter, scroll, and navigation on a physical device to validate performance before each release.}
+      \resumeItem{Built and shipped an offline-first Android tasbih counter (Room, DataStore) with routines, analytics, widgets, reminders, and optional Google Drive sync, using \textbf{AI-assisted workflows (Claude Code)} while owning architecture and review.}
+      \resumeItem{Authored \textbf{40+ unit tests} (JUnit) and instrumented UI tests (Espresso/Compose) covering counter logic, backup/restore and database migrations edge cases.}
     \resumeItemListEnd
 
     \item
@@ -211,17 +212,17 @@
     \href{https://github.com/badhon495/Easy_Docker_Installation}{Code}
     \vspace{-5pt}
     \resumeItemListStart
-      \resumeItem{Built a cross-distribution script to automate Docker installation by detecting OS and executing appropriate package workflows.}
-      \resumeItem{Validated script reliability across multiple VM instances and installation scenarios (fresh installs, partial installs, three+ Linux distributions), eliminating manual troubleshooting steps required in prior manual setups.}
+      \resumeItem{Built a one-command installer that detects the Linux distribution and runs the setup script, supporting \textbf{8 Linux distros}.}
+      \resumeItem{Validated script reliability across multiple VM instances and installation scenarios, eliminating manual troubleshooting steps required in prior manual setups.}
     \resumeItemListEnd
-    
+
   \end{itemize}
 
 
 
 
 %-----------OPEN SOURCE & PROBLEM SOLVING-----------
-\section{Open Source \& Problem Solving}
+\section{Open Source and Problem Solving}
 
 \small
 \subheading{Open Source}
