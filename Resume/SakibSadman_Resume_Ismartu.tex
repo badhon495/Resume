@@ -107,17 +107,6 @@
 
 
 %----------HEADING----------
-% \begin{center}
-%     \textbf{\Huge \scshape Md Sakib Sadman Badhon} \\ \vspace{4pt}
-%     \small
-%     \faMapMarker*~Mohammadpur, Dhaka \enspace
-%     \faIcon{mobile-alt}~+8801838214970 \enspace
-%     \faEnvelope~\href{mailto:badhon495@gmail.com}{badhon495@gmail.com} \enspace
-%     \faGlobe~\href{https://badhon495.github.io/}{badhon495.github.io} \enspace
-%     \faLinkedin~\href{https://linkedin.com/in/badhon495/}{badhon495} \enspace
-%     \faGithub~\href{https://github.com/badhon495}{badhon495}
-% \end{center}
-
 \begin{center}
     \textbf{\Huge \scshape Md Sakib Sadman Badhon} \\ \vspace{4pt}
     \faMapMarker*~Mohammadpur, Dhaka \enspace
@@ -137,10 +126,10 @@
       {Trainee Software Engineer}{Apr. 2026 -- Nov. 2026}
       {\href{https://www.nationalpolymer.net/}{\textcolor{black}{National Polymer Group}}}{Dhaka, Bangladesh}
       \resumeItemListStart
-        \resumeItem{Maintained in-house Sales, Dealer, and Office applications used by \textbf{1,200+ users} across the organization, providing direct user support and resolving day-to-day operational issues.}
-        \resumeItem{Shipped \textbf{6+ new Sales app features}, including conveyance bill submission, an analytics dashboard, and pause-order delivery, after gathering requirements from field and sales staff.}
-        \resumeItem{Tested and validated application data flows prior to release, identifying and reporting \textbf{20+ defects and data inconsistencies} to the development team for correction.}
-        \resumeItem{Monitored server logs and troubleshot production outages to maintain uptime and data reliability across the Sales, Dealer, and Office applications.}
+      \resumeItem{Maintained in-house Sales, Dealer, and Office Android applications used by \textbf{1,200+ users}, diagnosing and fixing platform-level performance and connectivity issues.}
+        \resumeItem{Migrated the Office app from React Native to \textbf{Kotlin}, reducing app size from \textbf{19 MB to 5 MB} and improving performance.}
+        \resumeItem{Redesigned the Sales app's dependency and build setup, cutting size from \textbf{35 MB to 17 MB} and boosting speed up to \textbf{50\%}.}
+        \resumeItem{Shipped \textbf{8+ new app features}, including conveyance bill submission, an analytics dashboard, and pause-order delivery, using AI-assisted workflows (\textbf{Claude Code}) while owning architecture and review.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -158,10 +147,10 @@
       \resumeItemListStart
         \resumeItem{CGPA: \textbf{3.74}/4.00 (High Distinction)}
         \resumeItem{Awarded \href{https://www.bracu.ac.bd/academics/policies-and-procedures/academic-standings-and-honors}{\textcolor{black}{Vice Chancellor's List, Dean's List}}, and \href{https://www.bracu.ac.bd/admissions/international-applicants/scholarship-financial-aid}{\textcolor{black}{Merit Scholarship}} across \textbf{6 of 12 semesters}.}
-        \resumeItem{Relevant Coursework: DBMS, System Design, Machine Learning, Cloud Computing, Networking, Web Development}
+        \resumeItem{Relevant Coursework: Operating Systems, Computer Architecture, DS \& Algorithms, Networking, System Design}
+        \resumeItem{\href{https://arxiv.org/abs/2604.27804}{\textcolor{black}{Undergraduate Thesis}} (under journal review): \textit{Machine Unlearning for Class Removal via SISA-based CNN Architectures}.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
 
 
 
@@ -169,6 +158,18 @@
 %-----------PROJECTS-----------
 \section{Projects}
   \begin{itemize}[leftmargin=0.15in, label={}, itemsep=6pt]
+
+    \item
+    \textbf{Dhikr (Tasbih Counter App)} \hfill 2026\\
+    \small\textit{Kotlin, Jetpack Compose, Material 3, Room, DataStore, Coroutines/Flow, R8} \hfill
+    \href{https://github.com/badhon495/Dhikr/releases}{Download} $|$
+    \href{https://github.com/badhon495/Dhikr}{Code}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Designed and shipped an offline-first native Android app (MVVM, Room, DataStore) with routines, analytics, widgets, and reminders, directing \textbf{Claude Code} as a coding agent and reviewing every generated change line by line.}
+      \resumeItem{Improved release performance with \textbf{Baseline Profiles}, Macrobenchmarks, and R8 shrinking and profiling startup time.}
+      \resumeItem{Integrated optional Gemini API calls and Google Drive sync, storing keys/tokens in \textbf{encrypted on-device storage}.}
+    \resumeItemListEnd
 
     \item
     \textbf{Should I Retake (Academic Analytics Platform)} \hfill 2025\\
@@ -179,7 +180,6 @@
     \resumeItemListStart
       \resumeItem{Built a zero-backend, privacy-first CGPA planner that parses official grade sheets in-browser, so \textbf{no student data leaves the device}; deployed on GitHub Pages, serving \textbf{10,000+ monthly users} at zero infrastructure cost.}
       \resumeItem{Engineered a fault-tolerant parser (parallel page extraction, coordinate-based line reconstruction, regex and word-level fallback) with domain rules for Repeat and Retake detection, best-grade duplicate resolution, and prep-course exclusion.}
-      \resumeItem{Added a real-time ``what-if'' grade editor with debounced updates and DOM caching for low-end devices, along with one-click client-side Excel export and generation of multi-page, watermarked PDF grade sheets.}
     \resumeItemListEnd
 
     \item
@@ -190,8 +190,16 @@
     \vspace{-5pt}
     \resumeItemListStart
       \resumeItem{Architected a role-based LMS (student, instructor, admin) with \textbf{11 relational models} and \textbf{40+ endpoints} in modular Flask blueprints, using hashed credentials and ownership checks.}
-      \resumeItem{Built an assessment engine with MCQ, true/false, short-answer, and essay questions, featuring auto-grading, attempt limits, passing scores, and an instructor manual-grading gradebook.}
-      \resumeItem{Automated certification by gating a server-generated PDF certificate (ReportLab) on lesson progress and quiz scores; added transactional one-click course cloning and instructor analytics.}
+      \resumeItem{Built an assessment engine with MCQ, true/false, short-answer, and essay questions, featuring auto-grading, attempt limits, and an instructor manual-grading gradebook.}
+    \resumeItemListEnd
+
+    \item
+    \textbf{Easy Docker Installation (Automated Script)} \hfill 2024\\
+    \small\textit{Bash, Linux, Systemd} \hfill
+    \href{https://github.com/badhon495/Easy_Docker_Installation}{Code}
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeItem{Built a one-command installer that detects the Linux distribution via \texttt{/etc/os-release} and dispatches the correct setup routine, supporting \textbf{8 Linux distros}, replacing \textbf{20+ manual commands}.}
     \resumeItemListEnd
 
   \end{itemize}
@@ -209,7 +217,6 @@
 Maintainer
 \begin{itemize}[noitemsep, topsep=0pt]
     \item Contributed \textbf{50+ merged pull requests} across repositories with \textbf{62,000+ combined GitHub stars}.
-    \item Improved accessibility of developer documentation for Bangla-speaking users.
     \item Collaborated with global maintainers via code reviews, issue tracking, and GitHub Actions CI/CD.
 \end{itemize}
 
@@ -217,7 +224,7 @@ Maintainer
 
 \subheading{Problem Solving}
 \begin{itemize}[noitemsep, topsep=0pt, partopsep=0pt]
-\item Solved \textbf{150+} problems on LeetCode \& HackerRank, covering SQL, DSA, DP, and graph algorithms.
+\item Solved \textbf{150+} problems on LeetCode \& HackerRank, covering Data Structures, Algorithms, DP, and graph theory.
 \end{itemize}
 \end{itemize}
 
@@ -228,12 +235,12 @@ Maintainer
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
-\textbf{Data \& Databases:} SQL, Oracle, PostgreSQL, MySQL, Microsoft Excel, Tableau\\
-\textbf{Languages:} Python, Java, Kotlin, JavaScript, Bash\\
-\textbf{Frameworks:} React, Laravel, Flask \;|\;
-\textbf{Systems:} Linux (CLI, Bash scripting)\\
-\textbf{Tools:} Git, GitHub Actions, Docker, Postman, Jira, Swagger \;|\;
-\textbf{Testing:} Selenium, k6, Unit Testing
+\textbf{Languages:} Kotlin, Java, C, Python, JavaScript, SQL, Bash \;|\;
+\textbf{Android:} Jetpack Compose, MVVM, Room, Coroutines/Flow, Android Studio Profiler\;|\; \textbf{AI-Assisted Development:} Claude Code, Copilot, Codex\\
+\textbf{Systems:} Linux (CLI, Bash scripting), Git, Docker \;|\;
+\textbf{Tools:} GitHub Actions, Docker, Postman, Jira
+\textbf{AI/ML:} Model training \& evaluation, CNNs, Scikit-learn, TensorFlow \;|\;
+\textbf{Databases:} Oracle, PostgreSQL, MySQL
 }}
 \end{itemize}
 
@@ -244,9 +251,9 @@ Maintainer
 \section{Certifications}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    \href{https://coursera.org/share/24a0cddc79cd62b195fd9be6436e6dae}{\textcolor{black}{\textbf{Google Data Analytics Certificate}}} (2024) --- Covers data cleaning, SQL, spreadsheets, R, Tableau, and dashboard visualization. \\
     \href{https://coursera.org/share/44fd8f381cb39ac45892569cdf6f7674}{\textcolor{black}{\textbf{Google Cybersecurity Professional Certificate}}} (2023) --- Covers threat detection, Linux security, SQL, and incident response. \\
-    \href{https://www.credly.com/badges/d5c30c19-02db-4c5f-9bc9-4bd0f4b6a89e/public_url}{\textcolor{black}{\textbf{GitHub Foundations Certification}}} (2024) --- Validates Git workflows, collaboration, and repository management.
+    \href{https://www.credly.com/badges/d5c30c19-02db-4c5f-9bc9-4bd0f4b6a89e/public_url}{\textcolor{black}{\textbf{GitHub Foundations Certification}}} (2024) --- Validates Git workflows, collaboration, and repository management. \\
+    \href{https://www.kaggle.com/certification/badges/badhon495/105}{\textcolor{black}{\textbf{5-Day AI Agents Intensive Course}}} (Kaggle \& Google, 2025) --- Covers AI agent architectures: models, tools, orchestration, memory, and evaluation.
     }}
  \end{itemize}
 

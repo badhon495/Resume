@@ -1,0 +1,77 @@
+%-------------------------
+% Cover Letter in Latex
+% For: Software Developer, Trust Innovation Ltd (TIL)
+%------------------------
+
+\documentclass[a4paper]{article}
+\usepackage{fontsize}
+\changefontsize{11pt}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{parskip}
+\input{glyphtounicode}
+
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{arimo}
+\else
+\usepackage{fontspec}
+\usepackage[sfdefault]{arimo}
+\fi
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage[a4paper, margin=1in]{geometry}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{10pt}
+
+\pdfgentounicode=1
+
+%-------------------------------------------
+\begin{document}
+
+\noindent November 10, 2026
+
+\noindent Hiring Team \\
+Trust Innovation Limited (TIL) \\
+Dhaka, Bangladesh
+
+\noindent \textbf{Subject: Application for the position of Software Developer}
+
+\noindent Dear Hiring Manager,
+
+\noindent I am writing to apply for the Software Developer position (Grade-8) at Trust Innovation Limited. I am currently a Trainee Software Engineer at National Polymer Group and recently graduated in Computer Science from BRAC University with a CGPA of 3.74/4.00. I think my experience building and maintaining production software for a large user base fits well with what TIL is doing across ISP, software development, and enterprise solutions.
+
+\noindent At National Polymer Group, I maintain the in-house Sales, Dealer, and Office applications, which together serve over 1,200 users. I redesigned the Sales app using newer, lighter packages, which cut its size from 35 MB to 17 MB and made it up to 50\% faster. I have also shipped several new features for it, including conveyance bill submission and an analytics dashboard, and led the migration of the Office app from React Native to Kotlin, bringing its size down from 19 MB to 5 MB.
+
+\noindent Outside work, I have built and shipped a few projects on my own: a CGPA planner that parses grade sheets entirely in the browser and now serves over 10,000 users a month, a role-based Learning Management System with 40+ API endpoints, and an offline-first Android app with encrypted local storage and cloud sync. Coursework in DBMS, System Design, and Cloud Computing, plus day-to-day work in Python, Java, Kotlin, JavaScript, SQL, React, Laravel, and Flask, rounds out what I can bring to the role.
+
+\noindent I would be glad to talk more about how I could contribute to your team. Thank you for considering my application.
+
+\vspace{6pt}
+\noindent Sincerely, \\
+\noindent Md Sakib Sadman Badhon \\
++8801838214970 \\
+\href{mailto:badhon495@gmail.com}{badhon495@gmail.com} \\
+\href{https://linkedin.com/in/badhon495/}{linkedin.com/in/badhon495}
+
+\end{document}
