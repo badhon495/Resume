@@ -1,0 +1,80 @@
+%-------------------------
+% Cover Letter in Latex
+% For: DevOps Engineer (Junior to Mid-Level), ShareTrip
+%------------------------
+
+\documentclass[a4paper]{article}
+\usepackage{fontsize}
+\changefontsize{11pt}
+
+\usepackage{latexsym}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue, citecolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{parskip}
+\input{glyphtounicode}
+
+\usepackage{iftex}
+\ifPDFTeX
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{arimo}
+\else
+\usepackage{fontspec}
+\usepackage[sfdefault]{arimo}
+\fi
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage[a4paper, margin=1in]{geometry}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{10pt}
+
+\pdfgentounicode=1
+
+%-------------------------------------------
+\begin{document}
+
+\noindent November 23, 2026
+
+\noindent Hiring Team, Tech Team \\
+ShareTrip \\
+Dhaka, Bangladesh
+
+\noindent \textbf{Subject: Application for the position of DevOps Engineer}
+
+\noindent Dear Hiring Manager,
+
+\noindent I am writing to apply for the DevOps Engineer position on ShareTrip's Tech Team. I recently graduated in Computer Science from BRAC University with a CGPA of 3.74/4.00, and I spent the last eight months as a Trainee Software Engineer at National Polymer Group, where much of my work involved keeping production systems running. A travel platform depends on being available when customers book, and that is the kind of reliability work I want to keep doing.
+
+\noindent At National Polymer Group, I administered the production server running on Oracle Linux, along with the Oracle 19c database behind the Sales, Dealer, and Office applications used by more than 1,200 people. I handled domains, DNS, and SSL/TLS certificates, monitored and rotated logs, and troubleshot outages when they happened. To make releases safer, I built a staging clone of the backend server that replicated its services, packages, and cron jobs, so changes could be tested before they reached production, and I ran sanity checks and SQL data verification after each release. I also wrote Bash scripts to automate backups and routine maintenance, and hardened the server's security, which included finding a critical authentication vulnerability in the backend.
+
+\noindent Automation is what I enjoy most. My Easy Docker Installation project is a Bash installer that detects the Linux distribution and sets up Docker on eight distros with a single command, replacing more than twenty manual steps. I have deployed Flask and Spring Boot services backed by PostgreSQL on Render and Netlify, managing their environment configuration and releases. As a maintainer on OpenTelemetry and tldr-pages, I have merged over 50 pull requests through code review and GitHub Actions CI/CD, which gave me a practical sense of how observability tooling is built and how large projects ship changes.
+
+\noindent My background is strongest in Linux, Bash and Python scripting, Git, GitHub Actions, Docker, and networking and security fundamentals, backed by Google certificates in IT Automation and Cybersecurity. I have not yet used Kubernetes, Terraform, or Ansible in production, and I would welcome the chance to build that experience on real infrastructure with your team.
+
+\noindent I would be glad to talk about how I could contribute to ShareTrip. Thank you for considering my application.
+
+\vspace{6pt}
+\noindent Sincerely, \\
+\noindent Md Sakib Sadman Badhon \\
++8801838214970 \\
+\href{mailto:badhon495@gmail.com}{badhon495@gmail.com} \\
+\href{https://linkedin.com/in/badhon495/}{linkedin.com/in/badhon495} \\
+\href{https://github.com/badhon495}{github.com/badhon495}
+
+\end{document}
